@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="flight image/IndiGo-Logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica&family=Hind+Siliguri:wght@300&family=Merriweather:ital,wght@0,300;1,700&family=Monoton&family=Nunito+Sans:wght@700&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Flight Ticket Booking</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+           
+
+        }
+       
+        select{
+            border: none;
+           
+            margin-left: 30px;
+        }
+        .hello{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            background-color: rgb(255, 255, 255);
+            background-color: rgb(42, 34, 166);
+            
+            
+         
+        }
+       ul li{
+            display: flex;
+            list-style-type: none;
+            text-decoration: none;
+
+            
+        }
+       
+        
+        .head_image{
+            display: flex;
+          align-items: center;
+           list-style-type: none;
+          
+         
+        }
+        .head_image i{
+            margin-left:20px ;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
+        .head_image img{
+            margin-left: 20px;
+        }
+        ul{
+            display: flex;
+            font-size:15.5px;
+           margin-left: 400px;
+            font-weight: 200;
+            color: white;
+        }
+        select{
+            font-size: 15px;
+            margin-left: 20px;
+            font-weight: 200;
+            color: white;
+            background-color:   rgb(42, 34, 166);
+            
+        }
+        select option{
+            background-color: white;
+            color: black;
+           
+        }
+        ul li{
+            margin-left: 20px;
+        }
+        .head_image1{
+            display: flex;
+            
+        }
+        section span{
+            color: blue;
+            
+        }
+        section p{
+            font-size: 14px;
+            margin: 30px 100px;
+            font-weight: bold;
+            
+            width: 100%;
+        }
+        section {
+           display: flex;
+           justify-content: start;
+        }
+        section h1{
+            margin: 30px 100px;
+            font-size: 30px;
+            opacity: 0.8;
+            width: 100%;
+            
+        }
+        .para select{
+            background-color: white;
+            color: black;
+            font-weight: 600;
+        }
+       section .para  .o{
+            color: rgb(60, 0, 255);
+            font-size: 15px;
+            
+        }
+        section  .section{
+            display: flex;
+            color: rgb(0, 68, 255);
+            margin: 30px 100px;
+           
+        } 
+        .para{
+            width: 50%;
+        }
+        .para1{
+            width: 50%;
+        }
+       .para1 {
+        margin: 30px 100px;
+        align-items: center;
+       }
+       
+       section .para1 input{
+        width: 80%;
+        height: 40px;
+        margin-top: 20px;
+        padding: 10px;
+        margin-left: 100px;
+        border-radius: 10px;
+        border: solid rgb(9, 44, 245) 2px;
+       }
+       section .para1 button{
+        width: 50%;
+       margin-left: 30%;
+       margin-top: 30px;
+       height: 40px;
+       background-color:  rgb(42, 34, 166);
+       color: white;
+       border-radius: 10px;
+       border: none;
+       font-size: 15px;
+       font-weight: 600;
+
+       }
+       section .row{
+        width: 100%;
+       }
+       section col{
+        width: 25%;
+       }
+       section .card{
+      
+        width: 20%;
+        height: 200px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 20px;
+       
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: solid white 1px;
+        
+       }
+       section .row{
+        display: flex;
+        justify-content: center;
+        margin-top: 12%;
+       background-color: rgb(243, 243, 247);
+        padding: 20px;
+       margin: 10px;
+       border-radius: 10px;
+      
+       }
+       section .row .card1{
+        background-image: url("https://t3.ftcdn.net/jpg/01/16/21/94/360_F_116219403_MMOSh3qN2Tns8wnc3S8PSmXEmsXp50DH.jpg");
+    
+       
+        
+
+
+       }
+       section .row .card1 h3{
+        text-align: center;
+        font-size: 25px;
+        margin-top: 10px;
+        color: white;
+    
+       
+       }
+        
+        section .row .card2 h3{
+        text-align: center;
+        font-size: 25px;
+        margin-top: 10px;
+        color: white;
+    }
+   
+
+     section .row .card3 h3{
+        text-align: center;
+        font-size: 25px;
+        margin-top: 10px;
+        color: white;
+     }
+     section .row .card4 h3{
+        text-align: center;
+        font-size: 25px;
+        margin-top: 10px;
+        color: white;
+     }
+     section .row .card4 p{
+          margin: 40px 35px;
+        color: rgb(255, 255, 255);
+        letter-spacing: 2px;
+     }
+     section .row .card4 button{
+            width: 60%;
+            margin: 0% 20%;
+            height: 40px;
+            border: none;
+            color: blue;
+            border-radius: 10px;
+            font-size: medium;
+            padding: 5px;
+            font-weight: 600;
+        }
+        section .row .card4 button:hover{
+            background-color:rgb(42, 34, 166);
+            color: white;
+        }
+        section .row .card3 button:hover{
+            background-color:  rgb(42, 34, 166);
+            color: white;
+        }
+        section .row .card2 button:hover{
+            background-color: rgb(42, 34, 166);
+            color: white;
+        }
+        section .row .card1 button:hover{
+            background-color:rgb(42, 34, 166);
+            color: white;
+        }
+
+
+
+
+     section .row .card3 p{
+          margin: 20px 13px;
+        color: rgb(255, 255, 255);
+        letter-spacing: 2px;
+     }
+     section .row .card2 span{
+        color: white;
+        font-size: 20px;
+     }
+     section .row .card2 p{
+          margin: 20px 10px;
+        color: rgb(255, 255, 255);
+     }
+     section .row .card3 button{
+            width: 60%;
+            margin: 5% 19%;
+            height: 40px;
+            border: none;
+            color: blue;
+            border-radius: 10px;
+            font-size: medium;
+            padding: 5px;
+            font-weight: 600;  font-weight: 600;
+        }
+     
+
+       section .row .card1 p{
+        text-align: left;
+        margin: 20px 28px;
+        color: rgb(255, 255, 255);
+        letter-spacing: 2px;
+       }
+        section .row .card1 button{
+            width: 60%;
+            margin: 15% 19%;
+            height: 40px;
+            border: none;
+            color: blue;
+            border-radius: 10px;
+            font-size: medium;
+            padding: 5px;
+            font-weight: 600;
+        }
+
+        section .row .card2 button{
+            width: 60%;
+            margin: 13% 19%;
+            height: 40px;
+            border: none;
+            color: blue;
+            border-radius: 10px;
+             font-size: medium;
+            padding: 5px;
+            font-weight: 600;
+        }
+        section .row .card2{
+            background-image: url("https://e0.pxfuel.com/wallpapers/358/40/desktop-wallpaper-dark-background-dark-gaming.jpg");
+
+        }
+        section .row .card3{
+            background-image: url("https://wallpaper-house.com/data/out/8/wallpaper2you_283281.jpg");
+
+        }
+        section .row .card4{
+            background-image: url("https://static.vecteezy.com/system/resources/previews/004/569/476/non_2x/wavy-gradient-dark-green-background-free-vector.jpg");
+
+        }
+       section .main_para{
+        display: flex;
+       width: 100%;
+       align-items: center;
+        
+    }
+    section .main_para h3{
+        margin-right: 50px;
+        opacity: 0.8;
+    }
+    section .card_card .card{
+        width: 300px;
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        margin: 10px 20px 50px 20px;  
+        position: relative;
+        flex-wrap: wrap;
+        border: solid rgb(201, 197, 197) 1px;
+        
+
+    }
+
+    section .card_card .card img{
+       width: 100%;
+       object-fit: cover;
+       border-radius: 10px 10px 0px 0px; 
+       
+
+    }
+    section .card_card .card h2{
+        position: absolute;
+        margin-left: 25%;
+        margin-top: 10px;
+        opacity: 0.8;
+    }
+    section .card_card .card p{
+        position: absolute;
+        margin: 60px  1px;
+        padding: 15px;
+      text-align: justify;
+      
+      font-weight: 300;
+        
+    }
+
+   
+    section .card_card{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+       
+    }
+
+   section .body_content{
+   display: flex;
+   width: 95%;
+   justify-content: center;
+   background-color:  rgb(42, 34, 166);
+   margin-bottom: 50px;
+   padding-bottom: 40px;
+   align-items: center;
+   margin-left: 30px;
+   margin-top: 60px;
+   border-radius: 10px;
+
+   }
+   section .body_content .body_para{
+    
+    height:     200px;
+    position: relative;
+   margin: 50px 40px;
+   justify-content: center;
+  
+   color: white;
+
+    
+   }
+
+   section .body_content .body_para h2{
+    font-size: 30px;
+   
+    
+   }
+   section .body_content .body_para p{
+    margin: 20px 0px;
+    text-align: justify;
+    line-height: 20px;
+    
+   
+    
+   }
+   section .body_img{
+    display: flex;
+    width: 95%;
+    height: 18vh;
+    padding: 10;
+    margin: 20px;
+   margin-left: 40px;
+    background-color:  rgb(255, 255, 255);
+    border: solid rgb(0, 255, 106) 1px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    
+    align-items: center;
+   }
+
+
+   section .body_img img,h4{
+    margin-left: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: 'Geologica', sans-serif;
+font-family: 'Hind Siliguri', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Monoton', cursive;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+   }
+   section .body_img img{
+    margin-top: -19px;
+   }
+
+   section .body_img h3{
+    color: rgb(0, 255, 42);
+   }
+ section .final .flight_image p{
+    margin:10px  0px 10px 0px;
+   
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-weight: 300;
+    
+ }
+ section .final{
+    display: flex;
+    width: 95%;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid black 1px;
+  margin-left:40px;
+    text-align: center;
+    height: 20vh;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 15px 0px 15px 0px;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+   min-height:100vh;
+    color: white;
+   
+}
+
+footer .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    line-height: 40px;
+     
+}
+footer .footer h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    border-bottom: solid white 1px;
+   
+   
+}
+footer .footer .content4  ul {
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+    font-size: 25px;
+   
+  
+}
+
+footer .last_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid white 2px;
+     font-weight: bold;
+    padding: 20px;
+    
+
+}
+
+footer .last_footer h4{
+    margin-left: 0;
+    letter-spacing: 1px;
+    
+
+}
+footer .footer .content4  {
+    text-align: center; 
+}
+
+footer .footer .content4 .dow , .our {
+    margin-top: 10px;
+}
+
+footer .footer .content4  img{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="hello">
+           <div class="head_image">
+
+             <i class="fa-solid fa-bars"></i>
+             <img  src="https://app-static-prod-skyplus6e.goindigo.in/content/dam/skyplus6e/in/en/assets/homepage/images/logo/icIndigoLogoWhiteR-new.svg" width="120px" height="50px" 
+       
+           </div>
+      
+
+      <div class="head_image1">
+       
+            <ul>
+            <select>
+                <option>GIft Voucher</option>
+                <option>Flight</option>
+                <option>6E Holidays</option>
+                <option>Bool</option>
+            </select>
+            
+            <li>
+                Check-in
+            </li>
+            <select>
+             <option>Editing Booking</option>
+            <option>MAnger</option>
+            <option>Plan-B</option>
+            <option>Bagger tag</option>
+            </select>
+            <li>
+                E6-Reward
+            </li>
+            <select>
+               <option>Flight & Status</option>
+                <option>CargoServicces</option>
+                <option> Charhes</option>
+                <option>Dstinations</option>
+                <option> Services</option>
+                <option>FAQs</option>
+                <option>Aditional </option>
+                <option>Contact Us</option>
+            </select>
+
+            <select>
+            <option>CustomerLogin</option>
+            <option>CustomerLogin</option>
+            <option>PartnerLogin</option>
+            <option>SMELogin</option>
+            </select>
+            
+
+        </ul>
+    </div>
+</div>
+</div>
+
+<section>
+    <div class="para">
+     <p><span>Home&nbsp; &nbsp; </span> > Flight Booking</p>
+
+     <h1>Flight Booking at Low-cost</h1>
+
+     <p>->&nbsp;One Way  &nbsp; <select><option>1Pax</option></select><select><option>Special Fares</option></select> <span class="o">&nbsp;&nbsp;Add Promo Code</span></p>
+
+    
+        <select class="section">
+            <option>Indian Rupee</option>
+            <option>Us Dollars</option>
+            <option>UAE Dirham</option>
+            <option>Dollar</option>
+        </select>
+ </div>
+
+ <div class="para1">
+  <h1>Flight Ticket Bookinng</h1>
+  <input type="text"placeholder="FROM"> 
+  <input type="text"placeholder="TO">
+  <input type="date">
+
+  <button type="button">Search Flight</button>
+
+ </div>
+</section>
+
+<section>
+  
+ 
+    <div class="row">
+       
+      
+        <div class="card card1">
+            <h3>Get up to 10%off</h3>
+            <p>OnIndiGo App Booking</p>
+            <button>App with benfite</button>
+        </div>
+        <div class="card card2">
+            <h3>Get up to 40%off</h3>
+            <p><span>Cash back</span>&nbsp; using-- MobikWik</p>
+            <button>App with benfite</button>
+        </div>
+        <div class="card card3">
+            <h3>Get up to 6% 6E Rewards</h3>
+            <p>OnIndiGo Co-brand Credit</p>
+            <button>App with benfite</button>
+        </div>
+        <div class="card card4">
+            <h3>Get up to 30%off</h3>
+            <p>OnIndiGo App Fare</p>
+            <button>App with benfite</button>
+        </div>
+    </div>
+</section>
+<!----------------------body--------------------->
+<section>
+   <div class="main_para">
+    <h1>Get Inspier</h1>
+    <h3>View</h3>
+   </div>
+</section>
+<section>
+<div class="card_card">
+    <div class="card" >
+        <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2014/11/cover-for-places-to-visit-in-September-in-the-world.jpg">
+        <h2>Exclusive tour</h2>
+        <p>Immerse in the beautiful vineyards of Fratelli with a tour of the place wherein you’ll get to visit the tank hall,bottling plant, crushing pad, cellar, and more. IndiGo passengers flying to Pune get a complimentary tour on both day visit and stay at the Fratelli Estate</p>
+        
+         </div>
+       
+    <div class="card">
+        <img src="https://www.planetware.com/wpimages/2019/09/top-places-to-visit-in-the-world-london-england.jpg">
+        <h2>Exclusive tour</h2>
+        <p>Immerse in the beautiful vineyards of Fratelli with a tour of the place wherein you’ll get to visit the tank hall,bottling plant, crushing pad, cellar, and more. IndiGo passengers flying to Pune get a complimentary tour on both day visit and stay at the Fratelli Estate</p>
+        
+    </div>
+
+    <div class="card">
+        <img src="https://im.indiatimes.in/media/content/2015/Jan/indonesia-exploring-tourism_1421318041_725x725.jpg">
+        <h2>Exclusive tour</h2>
+        <p>Immerse in the beautiful vineyards of Fratelli with a tour of the place wherein you’ll get to visit the tank hall,bottling plant, crushing pad, cellar, and more. IndiGo passengers flying to Pune get a complimentary tour on both day visit and stay at the Fratelli Estate</p>
+    </div>
+
+    <div class="card">
+        <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2020/03/800px-Pangong_lake_Ladakh_3.jpg">
+        <h2>Exclusive tour</h2>
+        <p>Immerse in the beautiful vineyards of Fratelli with a tour of the place wherein you’ll get to visit the tank hall,bottling plant, crushing pad, cellar, and more. IndiGo passengers flying to Pune get a complimentary tour on both day visit and stay at the Fratelli Estate</p>
+        
+    </div>
+</div>
+</section>
+
+<section>
+    <div class="body_content">
+        <div class="body_para">
+            <h2>Why choose IndiGo experience</h2>
+            <p>When you book flight with IndiGo, you fly on-time, every time, daily, and non-stop. Get the lowest booking and cancellation fee, exclusive offers, add-ons and in-flight services that make your journey hassle-free. Now, you can download the app and travel on the go, with IndiGo.</p>
+        </div>
+        <div class="body_para">
+            <h2>India and abroad choose IndiGo</h2>
+            <p>Choose from over 75+ domestic, and 25+ international destinations when you book with IndiGo. Enjoy the 6E experience when you fly across the world with our 7 codeshare partners - from France to Australia, and beyond. Book your preferred flight on our website and let us fly you across India and the world.</p>
+        </div>
+        <div class="body_para">
+            <h2>The complete 6E experience</h2>
+            <p>When you book flight with IndiGo, you fly on-time, every time, daily, and non-stop. Get the lowest booking and cancellation fee, exclusive offers, add-ons and in-flight services that make your journey hassle-free. Now, you can download the app and travel on the go, with IndiGo.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+<div class="body_img">
+    <img src="https://media.tenor.com/Gto1wiKVb9AAAAAi/appintheair-plane.gif" width="200px" height="130px">
+
+    <h3>NDIGO <br> ALERTS</h3>
+    <h4>When you book flight with IndiGo, you fly on-time, every time, daily, and non-stop. Get the lowest booking and cancellation fee, exclusive offers, </h4>
+</div>
+
+
+</section>
+
+<section>
+    <div class="final">
+        <div class="flight_image">
+            <img src="https://us.123rf.com/450wm/prescott09/prescott091605/prescott09160500186/58956512-silhouette-of-plane-isolated-on-white-background-vector-illustration-of-airplane.jpg?ver=6" width="80px" height="50px">
+
+            <p class="p">1800+ Daily flights</p>
+        </div>
+
+        <div class="flight_image">
+            <img src="https://www.svgrepo.com/show/308279/india-map-country.svg" width="80px" height="50px">
+
+            <p>75+ Domestic<br> Destinations</p>
+        </div>
+
+        <div class="flight_image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-dDwhGy_cIiYI0V_5B7CsZdMKr6UFd5ydhg&usqp=CAU" width="80px" height="50px">
+
+            <p>30+ International<br> Destinations</p>
+        </div>
+
+        <div class="flight_image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQygug_t4CwSncH4WQHdV6S46yhwzyydPdEzzvIAc0ZP7hPtSf_JJaVQ2grWt3t3FVpeaw&usqp=CAU" width="80px" height="50px">
+
+            <p>500 Mn+ happy<br> passengers
+            </p>
+        </div>
+
+        
+        <div class="flight_image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoLg8W2VaaDW4psz3tVa5TBi-Rs2o5V801FA&usqp=CAU" width="80px" height="50px">
+
+            <p>300+ Fleet strong</p>
+        </div>
+
+</div>
+</section>
+
+<footer>
+
+    <div class="footer">
+        <div class="content">
+            <h3>Get to Know Us</h3>
+            <p>IndiGo Green – ESG report</p>
+            <p>IndiGoReach - Our CSR initiatives</p>
+            <p>Hello 6E Magazine</p>
+            <p>Board of Directors</p>
+            <p>Leadership Team</p>
+            <p>Press Releases</p>
+            <p>InterGlobe Enterprises</p>
+            <p>RPWD - Equal Opportunity Policy</p>
+            <p>Transgender Persons Policys</p>
+        </div>
+
+        <div class="content">
+            <h3>Servicess</h3>
+            <p>Plan B</p>
+            <p>Special Disability Assistance</p>
+            <p>Medical Assistance</p>
+            <p>Seat Select</p>
+            <p>Gift Voucher</p>
+            <p>6E Tiffins</p>
+            <p>Add-ons & Services</p>
+            <p>Baggage</p>
+            <p>Refund Claim</p>
+        </div>
+
+        <div class="content">
+            <h3>Offers</h3>
+            <p>Career</p>
+            <p>Special Disability Assistance</p>
+            <p>Advertise with us</p>
+            <p>Sitemap</p>
+            <p>Destinations</p>
+            <p>Terms and Conditions</p>
+            <p>Conditions of Carriage</p>
+            <p>Disclaimer</p>
+            <p>International Travel Tips</p>
+        </div>
+
+        <div class="content4">
+            <h3>Social</h3>
+            <ul>
+               <li><i class="fa-brands fa-youtube"></i></li>
+               <li><i class="fa-brands fa-facebook"></i> </li>
+               <li> <i class="fa-brands fa-twitter"></i></li>
+               <li> <i class="fa-brands fa-instagram"></i></li>
+            </ul>
+
+            <h3 class="dow">Download</h3>
+
+            <img src="C:\Users\Dinesh\Desktop\flight image\25-252618_app-store-google-play-png-png-google-play.png" width="130px" height="80px">
+            
+            <h3 class="our">Our Award</h3>
+
+            <img  src="https://app-static-prod-skyplus6e.goindigo.in/content/dam/skyplus6e/in/en/assets/homepage/images/award_new1.png" width="180px" height="40px">
+
+            <img  src="https://app-static-prod-skyplus6e.goindigo.in/content/dam/skyplus6e/in/en/assets/homepage/images/award_new2.png" width="180px" height="40px">
+
+            <img  src="https://app-static-prod-skyplus6e.goindigo.in/content/dam/skyplus6e/in/en/assets/homepage/images/award_new3.png" width="180px" height="40px">
+        </div>
+
+       
+    </div>
+
+    <div class="last_footer">
+        <img src="C:\Users\Dinesh\Desktop\flight image\IndiGo-Logo.jpg" width="30px" height="30px">
+        
+        <h4>Ⓒ Copyright 2023 IndiGo. All rights reserved.</h4>
+    </div>
+
+</footer>
+ 
+</body>
+</html>
